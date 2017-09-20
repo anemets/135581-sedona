@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Емцев](https://up.htmlacademy.ru/adaptive/12/user/135581).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров] (https://htmlacademy.ru/profile/4er).
 
 ---
 
