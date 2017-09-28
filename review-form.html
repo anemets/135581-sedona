@@ -6,98 +6,118 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Седона">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Седона">
+        </a>
         <button class="main-nav__hamburger" type="button">Menu</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фото и Видео</a>
+            <a class="main-nav__link" href="photo.html">Фото и Видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="review-form.html">Форма отзыва</a>
+            <a class="main-nav__link">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/12">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="review">
-        <header class="review__header content-header">
-          <img src="http://placehold.it/320x158" class="content-header__image" width="320" height="158">
-          <h2 class="content-header__title">
-            Оставьте свой отзыв
-          </h2>
-          <p class="content-header__description">
-            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
-          </p>
-        </header>
-        <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="review__fieldset">
-            <legend class="review__legend">
-              Представьтесь:
-            </legend>
-            <label class="review__label">
-              Имя:*
-              <input class="review__input" type="text" name="name" id="name" placeholder="Петр" required>
-            </label>
-            <label class="review__label">
-              Фамилия:*
-              <input class="review__input" type="text" name="last-name" id="last-name" placeholder="Иванов" required>
-            </label>
-            <label class="review__label">
-              Отчество:
-              <input class="review__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
-            </label>
-          </fieldset>
-          <fieldset class="review__fieldset">
-            <legend class="review__legend">
-              Контактная Информация:
-            </legend>
-            <label class="review__label" for="phone">
-              Контактный Телефон:*
-            </label>
-            <input class="review__input review__input--tel" name="phone" type="tel" id="phone" placeholder="Введите телефон" required>
-            <label class="review__label" for="email">
-              Электронная почта:*
-            </label>
-            <input class="review__input review__input--email" name="email" type="email" id="email" placeholder="Введите e-mail" required>
-          </fieldset>
-          <fieldset class="review__fieldset">
-            <legend class="review__legend">
-              Ваше Общее Впечатление:
-            </legend>
-            <input class="review__radio" type="radio" name="impression" value="good"> Скорее положительное<br>
-            <input class="review__radio" type="radio" name="impression" value="bad"> Скорее отрицательное<br>
-            <input class="review__radio" type="radio" name="impression" value="no"> Затрудняюсь ответить<br>
-          </fieldset>
-          <fieldset class="review__fieldset">
-            <legend class="review__legend">
-              Посещенные Достопримечательности:
-            </legend>
-            <input class="review__checkbox" name="visited" type="checkbox" value="Devil Bridge" checked> Мост Дьявола<br>
-            <input class="review__checkbox" name="visited" type="checkbox" value="Slide-park" checked> Слайд-парк<br>
-            <input class="review__checkbox" name="visited" type="checkbox" value="Bell Mountain"> Гора-Колокол<br>
-            <input class="review__checkbox" name="visited" type="checkbox" value="Red Rocks" checked> Красные скалы<br>
-          </fieldset>
-          <fieldset class="review__fieldset">
-            <legend class="review__legend">
-              Опишите свои эмоции:
-            </legend>
-            <textarea class="review__textarea" name="description">
-              Опишите подробно свои восторги
-            </textarea>
-          </fieldset>
-          <button class="review__submit button" type="submit">
-            ОТПРАВИТЬ ОТЗЫВ
-          </button>
-        </form>
+      <section class="content-header">
+        <img src="http://placehold.it/320x158" class="content-header__image" width="320" height="158">
+        <h2 class="content-header__title">
+          Оставьте свой отзыв
+        </h2>
+        <p class="content-header__description">
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
+      </section>
+      <form class="review" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">
+            Представьтесь:
+          </legend>
+          <label class="review__label">
+            Имя:*
+            <input class="review__input" type="text" name="name" id="name" placeholder="Петр" required>
+          </label>
+          <label class="review__label">
+            Фамилия:*
+            <input class="review__input" type="text" name="last-name" id="last-name" placeholder="Иванов" required>
+          </label>
+          <label class="review__label">
+            Отчество:
+            <input class="review__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+          </label>
+        </fieldset>
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">
+            Контактная Информация:
+          </legend>
+          <label class="review__label" for="phone">
+            Контактный Телефон:*
+          </label>
+          <input class="review__input review__input--tel" name="phone" type="tel" id="phone" placeholder="Введите телефон" required>
+          <label class="review__label" for="email">
+            Электронная почта:*
+          </label>
+          <input class="review__input review__input--email" name="email" type="email" id="email" placeholder="Введите e-mail" required>
+        </fieldset>
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">
+            Ваше Общее Впечатление:
+          </legend>
+          <label class="review__label review__label--bold">
+            <input class="review__radio" type="radio" name="impression" value="good">
+            Скорее положительное
+          </label>
+          <label class="review__label review__label--bold">
+            <input class="review__radio" type="radio" name="impression" value="bad">
+            Скорее отрицательное
+          </label>
+          <label class="review__label review__label--bold">
+            <input class="review__radio" type="radio" name="impression" value="no">
+            Затрудняюсь ответить
+          </label>
+        </fieldset>
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">
+            Посещенные Достопримечательности:
+          </legend>
+          <label class="review__label review__label--bold">
+            <input class="review__checkbox" name="visited" type="checkbox" value="Devil Bridge" checked>
+            Мост Дьявола
+          </label>
+          <label class="review__label review__label--bold">
+            <input class="review__checkbox" name="visited" type="checkbox" value="Slide-park" checked>
+            Слайд-парк
+          </label>
+          <label class="review__label review__label--bold">
+            <input class="review__checkbox" name="visited" type="checkbox" value="Bell Mountain">
+            Гора-Колокол
+          </label>
+          <label class="review__label review__label--bold">
+            <input class="review__checkbox" name="visited" type="checkbox" value="Red Rocks" checked>
+            Красные скалы
+          </label>
+        </fieldset>
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">
+            Опишите свои эмоции:
+          </legend>
+          <textarea class="review__textarea" name="description">
+            Опишите подробно свои восторги
+          </textarea>
+        </fieldset>
+        <button class="review__submit button" type="submit">
+          ОТПРАВИТЬ ОТЗЫВ
+        </button>
+      </form>
     </main>
     <footer class="page-footer">
       <b class="page-footer__hashtag">

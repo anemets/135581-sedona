@@ -6,121 +6,123 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Седона">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Седона">
+        </a>
         <button class="main-nav__hamburger" type="button">Menu</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фото и Видео</a>
+            <a class="main-nav__link">Фото и Видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="review-form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="review-form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/12">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="photo-video">
-        <header class="photo-video__header content-header">
-          <img src="http://placehold.it/320x158" class="content-header__image" width="320" height="158">
-          <h2 class="content-header__title">
-            Фото и Видео
-          </h2>
-          <p class="content-header__description">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-          </p>
-        </header>
-        <ul class="photo-video__list">
-          <li class="photo-video__item">
-            <article class="photo-video__entity photo">
-              <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280">
-              <h3 class="photo__title">
-                Народные просторы
-              </h3>
-              <div class="photo__author">
-                Автор фото: Борис
-              </div>
-              <div class="photo__likes">
-                <a class="photo__like-button" href="#">
-                  Мне нравится!
-                </a>
-                <b class="photo__likes-count">
-                  1350
-                </b>
-            </article>
-          </li>
-          <li class="photo-video__item">
-            <article class="photo-video__entity photo">
-              <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280">
-              <h3 class="photo__title">
-                Местная растительность
-              </h3>
-              <div class="photo__author">
-                Автор фото: Сергей
-              </div>
-              <div class="photo__likes">
-                <a class="photo__like-button" href="#">
-                  Мне нравится!
-                </a>
-                <b class="photo__likes-count">
-                  143
-                </b>
-            </article>
-          </li>
-          <li class="photo-video__item">
-            <article class="photo-video__entity photo">
-              <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280">
-              <h3 class="photo__title">
-                Дорога на север
-              </h3>
-              <div class="photo__author">
-                Автор фото: Петр
-              </div>
-              <div class="photo__likes">
-                <a class="photo__like-button" href="#">
-                  Мне нравится!
-                </a>
-                <b class="photo__likes-count">
-                  96
-                </b>
-            </article>
-          </li>
-          <li class="photo-video__item">
-            <article class="photo-video__entity photo">
-              <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280">
-              <h3 class="photo__title">
-                Мост Дьявола
-              </h3>
-              <div class="photo__author">
-                Автор фото: Антон
-              </div>
-              <div class="photo__likes">
-                <a class="photo__like-button" href="#">
-                  Мне нравится!
-                </a>
-                <b class="photo__likes-count">
-                  254
-                </b>
-            </article>
-          </li>
-        </ul>
+      <section class="content-header">
+        <img src="http://placehold.it/320x158" class="content-header__image" width="320" height="158">
+        <h2 class="content-header__title">
+          Фото и Видео
+        </h2>
+        <p class="content-header__description">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
       </section>
-      <div class="still-doubt">
-        <h2 class="still-doubt__header">
+      <ul class="photo-video">
+        <li class="photo-video__item">
+          <article class="photo-video__entity photo">
+            <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280">
+            <h3 class="photo__title">
+              Народные просторы
+            </h3>
+            <div class="photo__author">
+              Автор фото: Борис
+            </div>
+            <div class="photo__likes">
+              <a class="photo__like-button" href="#">
+                Мне нравится!
+              </a>
+              <b class="photo__likes-count">
+                1350
+              </b>
+            </div>
+          </article>
+        </li>
+        <li class="photo-video__item">
+          <article class="photo-video__entity photo">
+            <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280">
+            <h3 class="photo__title">
+              Местная растительность
+            </h3>
+            <div class="photo__author">
+              Автор фото: Сергей
+            </div>
+            <div class="photo__likes">
+              <a class="photo__like-button" href="#">
+                Мне нравится!
+              </a>
+              <b class="photo__likes-count">
+                143
+              </b>
+            </div>
+          </article>
+        </li>
+        <li class="photo-video__item">
+          <article class="photo-video__entity photo">
+            <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280">
+            <h3 class="photo__title">
+              Дорога на север
+            </h3>
+            <div class="photo__author">
+              Автор фото: Петр
+            </div>
+            <div class="photo__likes">
+              <a class="photo__like-button" href="#">
+                Мне нравится!
+              </a>
+              <b class="photo__likes-count">
+                96
+              </b>
+            </div>
+          </article>
+        </li>
+        <li class="photo-video__item">
+          <article class="photo-video__entity photo">
+            <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280">
+            <h3 class="photo__title">
+              Мост Дьявола
+            </h3>
+            <div class="photo__author">
+              Автор фото: Антон
+            </div>
+            <div class="photo__likes">
+              <a class="photo__like-button" href="#">
+                Мне нравится!
+              </a>
+              <b class="photo__likes-count">
+                254
+              </b>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="video-block">
+        <h2 class="video-block__header">
           Все еще сомневаетесь?
         </h2>
-        <p class="still-doubt__text">
+        <p class="video-block__text">
           Смотрите видео презентацию и скорее за билетами, пока они не подорожали в очередной раз!
         <p>
-        <video class="still-doubt__video" controls src="#" width="320" height="201"></video>
+        <video class="video-block__video" controls src="#" width="320" height="201"></video>
       </div>
     </main>
     <footer class="page-footer">
