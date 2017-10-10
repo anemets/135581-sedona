@@ -5,3 +5,24 @@
 .photo-video__entity {
   padding: 22px 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .photo-video {
+    margin: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-video__item{
+    min-width: 324px;
+    flex-grow: 1;
+  }
+
+  .photo-video__item:first-child {
+    width: 100%;
+  }
+
+  .photo-video__entity {
+    padding: 0;
+  }
+}

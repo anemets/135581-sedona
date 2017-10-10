@@ -4,7 +4,7 @@
   line-height: 40px;
   text-transform: uppercase;
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   flex-direction: column;
   position: relative;
 
@@ -24,17 +24,20 @@
     position: relative;
   }
 }
+
 .main-nav__item {
   text-align: center;
   @media (min-width: @tablet-width) {
     width: 20%;
   }
 }
+
 .main-nav__item:nth-child(4n-1){
   @media (min-width: @tablet-width) {
     margin-left:20%;
   }
 }
+
 .main-nav__link {
   color: #ffffff;
   text-decoration: none;
@@ -42,12 +45,15 @@
     color: #000000;
   }
 }
+
 .main-nav__logo {
   position: absolute;
   left: 50%;
   margin-left: -51px;
   bottom: -20px;
+  z-index: 1;
 }
+
 .main-nav__hamburger {
   order: 2;
   align-self: flex-end;

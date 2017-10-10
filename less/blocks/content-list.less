@@ -15,3 +15,16 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+@media (min-width: @tablet-width) {
+  .content-list {
+    padding: 0;
+    display: flex;
+    min-height: 330px;
+  }
+
+  .content-list__item {
+    margin-left: 0;
+    flex-grow: 1;
+  }
+}
