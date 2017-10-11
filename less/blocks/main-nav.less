@@ -17,6 +17,7 @@
 .main-nav__list {
   .fix-list();
   background-color: #81b3d2;
+
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
     display: flex;
@@ -27,20 +28,22 @@
 
 .main-nav__item {
   text-align: center;
+
   @media (min-width: @tablet-width) {
     width: 20%;
   }
 }
 
-.main-nav__item:nth-child(4n-1){
+.main-nav__item:nth-child(4n-1) {
   @media (min-width: @tablet-width) {
-    margin-left:20%;
+    margin-left: 20%;
   }
 }
 
 .main-nav__link {
   color: #ffffff;
   text-decoration: none;
+
   @media (min-width: @tablet-width) {
     color: #000000;
   }
@@ -57,6 +60,7 @@
 .main-nav__hamburger {
   order: 2;
   align-self: flex-end;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
